@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="header">
+        <a href="hoodies.html"><img src="img/logo.png" class="logo" alt="AZZ"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="hoodies.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/kingdom.png" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/kingdom.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/maroc.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/maroc2.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/kingdom2.png" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Hoodie</h6>
+            <h4>Moroccan Designed Hoodie</h4>
+            <h2>269 MAD</h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="https://wa.me/212649956446" target="_blank"><button class="normal">Order Now</button></a>
+            <h4>product Details</h4>
+            <span>Discover the allure of Morocco with AZZ Friands' uniquely designed hoodie. This blend of traditional Moroccan patterns and contemporary comfort creates a distinctive style statement. Crafted with care and quality materials, our hoodie offers durability and a snug fit for any occasion. Embrace the cultural richness effortlessly with this versatile piece, adding a touch of North African elegance to your everyday wardrobe.</span>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Phone: </strong>+212 649956446</p>
+            <p><strong>Email: </strong>azzwear100@gmail.com</p>
+            <p><strong>Hours: </strong>24/7</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/azz_wear/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="about.html">Delivery Information</a>
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms & Conditions</a>
+            <a href="about.html">Contact Us</a>
+        </div>
+        <div class="payment">
+            <h4>Payment</h4>
+            <p>Cash On Delivery</p>
+            <h5>Cash</h5>
+            <img src="img/cash.jpg" alt="" class="logo">
+        </div>
+        <div class="copyright">
+            <p>@ 2024, AZZ friends - HTML CSS JavaScript Ecommerce Template</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+        smallimg[4].onclick = function(){
+            MainImg.src = smallimg[4].src;
+        }
+    </script>
+
+    <script src="boom.js"></script>
+</body>
+</html>
